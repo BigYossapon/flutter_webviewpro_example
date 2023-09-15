@@ -1,0 +1,6 @@
+R_DEF: Internal format may change without notice
+local
+string photo_library
+string select_picture
+string take_photo
+string take_pic_need_permission
