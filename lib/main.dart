@@ -155,7 +155,7 @@ class _WebViewExampleState extends State<WebViewExample> {
     //   );
     // });
     _bindBackgroundIsolate();
-    FlutterDownloader.registerCallback(callback);
+    FlutterDownloader.registerCallback(callback, step: 1);
   }
 
   @override
@@ -247,7 +247,12 @@ class _WebViewExampleState extends State<WebViewExample> {
       final taskId = (data as List<dynamic>)[0] as String;
       final status = DownloadTaskStatus.fromInt(data[1] as int);
       final progress = data[2] as int;
-
+      print(
+          'status: ' + status.toString() + 'progress :' + progress.toString());
+      if (status == 3 && progress == 100) {
+        print('get');
+        FlutterDownloader.open(taskId: taskId);
+      }
       print(
         'Callback on UI isolate: '
         'task ($taskId) is in status ($status) and process ($progress)',
@@ -313,9 +318,6 @@ class _WebViewExampleState extends State<WebViewExample> {
         openFileFromNotification:
             true, // click on notification to open downloaded file (for Android)
         saveInPublicStorage: true);
-
-    await FlutterDownloader.registerCallback(
-        callback); // callback is a top-level or static function
   }
 
   Future<String> getfilename(String url) async {
