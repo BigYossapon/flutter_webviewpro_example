@@ -13,335 +13,526 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/it_dev/Documents/flutter_webviewpro_01/android/app/src/debug/AndroidManifest.xml:6:5-66
-15-->/Users/it_dev/Documents/flutter_webviewpro_01/android/app/src/debug/AndroidManifest.xml:6:22-64
-16
+15-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:104:5-66
+15-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:104:22-64
+16    <!-- Provide required visibility configuration for API level 30 and above -->
 17    <queries>
-17-->/Users/it_dev/Documents/flutter_webviewpro_01/android/app/src/main/AndroidManifest.xml:3:1-14:11
+17-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:6:5-17:15
 18
 19        <!-- If your app checks for SMS support -->
 20        <intent>
-20-->/Users/it_dev/Documents/flutter_webviewpro_01/android/app/src/main/AndroidManifest.xml:5:3-8:12
+20-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:8:9-11:18
 21            <action android:name="android.intent.action.VIEW" />
-21-->/Users/it_dev/Documents/flutter_webviewpro_01/android/app/src/main/AndroidManifest.xml:6:5-57
-21-->/Users/it_dev/Documents/flutter_webviewpro_01/android/app/src/main/AndroidManifest.xml:6:13-54
+21-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:9:13-65
+21-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:9:21-62
 22
 23            <data android:scheme="sms" />
-23-->/Users/it_dev/Documents/flutter_webviewpro_01/android/app/src/main/AndroidManifest.xml:7:5-34
-23-->/Users/it_dev/Documents/flutter_webviewpro_01/android/app/src/main/AndroidManifest.xml:7:11-31
+23-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:10:13-42
+23-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:10:19-39
 24        </intent>
 25        <!-- If your app checks for call support -->
 26        <intent>
-26-->/Users/it_dev/Documents/flutter_webviewpro_01/android/app/src/main/AndroidManifest.xml:10:3-13:12
+26-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:13:9-16:18
 27            <action android:name="android.intent.action.VIEW" />
-27-->/Users/it_dev/Documents/flutter_webviewpro_01/android/app/src/main/AndroidManifest.xml:6:5-57
-27-->/Users/it_dev/Documents/flutter_webviewpro_01/android/app/src/main/AndroidManifest.xml:6:13-54
+27-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:9:13-65
+27-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:9:21-62
 28
 29            <data android:scheme="tel" />
-29-->/Users/it_dev/Documents/flutter_webviewpro_01/android/app/src/main/AndroidManifest.xml:7:5-34
-29-->/Users/it_dev/Documents/flutter_webviewpro_01/android/app/src/main/AndroidManifest.xml:7:11-31
+29-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:10:13-42
+29-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:10:19-39
 30        </intent>
 31        <intent>
-31-->[:flutter_downloader] /Users/it_dev/Documents/flutter_webviewpro_01/build/flutter_downloader/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-13:18
+31-->[:flutter_downloader] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/flutter_downloader/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-13:18
 32            <action android:name="android.intent.action.VIEW" />
-32-->/Users/it_dev/Documents/flutter_webviewpro_01/android/app/src/main/AndroidManifest.xml:6:5-57
-32-->/Users/it_dev/Documents/flutter_webviewpro_01/android/app/src/main/AndroidManifest.xml:6:13-54
+32-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:9:13-65
+32-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:9:21-62
 33        </intent>
-34    </queries>
-35
-36    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-36-->[:flutter_downloader] /Users/it_dev/Documents/flutter_webviewpro_01/build/flutter_downloader/intermediates/merged_manifest/debug/AndroidManifest.xml:16:5-77
-36-->[:flutter_downloader] /Users/it_dev/Documents/flutter_webviewpro_01/build/flutter_downloader/intermediates/merged_manifest/debug/AndroidManifest.xml:16:22-74
-37    <uses-permission android:name="android.permission.WAKE_LOCK" />
-37-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:5-68
-37-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:22-65
-38    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-38-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:26:5-79
-38-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:26:22-76
-39    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-39-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
-39-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
-40    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-40-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
-40-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:22-74
-41
-42    <permission
-42-->[androidx.core:core:1.10.1] /Users/it_dev/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
-43        android:name="com.example.flutter_webviewpro_01.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-43-->[androidx.core:core:1.10.1] /Users/it_dev/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
-44        android:protectionLevel="signature" />
-44-->[androidx.core:core:1.10.1] /Users/it_dev/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
-45
-46    <uses-permission android:name="com.example.flutter_webviewpro_01.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-46-->[androidx.core:core:1.10.1] /Users/it_dev/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
-46-->[androidx.core:core:1.10.1] /Users/it_dev/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
-47
-48    <application
-49        android:name="android.app.Application"
-50        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-50-->[androidx.core:core:1.10.1] /Users/it_dev/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
-51        android:debuggable="true"
-52        android:icon="@mipmap/ic_launcher"
-53        android:label="flutter_webviewpro_01" >
-54        <activity
-55            android:name="com.example.flutter_webviewpro_01.MainActivity"
-56            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-57            android:exported="true"
-58            android:hardwareAccelerated="true"
-59            android:launchMode="singleTop"
-60            android:theme="@style/LaunchTheme"
-61            android:windowSoftInputMode="adjustResize" >
-62
-63            <!--
-64                 Specifies an Android theme to apply to this Activity as soon as
-65                 the Android process has started. This theme is visible to the user
-66                 while the Flutter UI initializes. After that, this theme continues
-67                 to determine the Window background behind the Flutter UI.
-68            -->
-69            <meta-data
-70                android:name="io.flutter.embedding.android.NormalTheme"
-71                android:resource="@style/NormalTheme" />
-72
-73            <intent-filter>
-74                <action android:name="android.intent.action.MAIN" />
-75
-76                <category android:name="android.intent.category.LAUNCHER" />
-77            </intent-filter>
-78        </activity>
-79        <!--
-80             Don't delete the meta-data below.
-81             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-82        -->
-83        <meta-data
-84            android:name="flutterEmbedding"
-85            android:value="2" />
-86
-87        <activity
-87-->[:url_launcher_android] /Users/it_dev/Documents/flutter_webviewpro_01/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
-88            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-88-->[:url_launcher_android] /Users/it_dev/Documents/flutter_webviewpro_01/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
-89            android:exported="false"
-89-->[:url_launcher_android] /Users/it_dev/Documents/flutter_webviewpro_01/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
-90            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-90-->[:url_launcher_android] /Users/it_dev/Documents/flutter_webviewpro_01/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+34    </queries> <!-- Permissions options for the `contacts` group -->
+35    <uses-permission android:name="android.permission.READ_CONTACTS" />
+35-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:107:5-71
+35-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:107:22-69
+36    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+36-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:108:5-72
+36-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:108:22-70
+37    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- Permissions options for the `storage` group -->
+37-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:109:5-70
+37-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:109:22-68
+38    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Read storage permission for Android 12 and lower -->
+38-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:112:5-80
+38-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:112:22-78
+39    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+39-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:114:5-79
+39-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:114:22-77
+40    <!--
+41      Granular media permissions for Android 13 and newer.
+42      See https://developer.android.com/about/versions/13/behavior-changes-13#granular-media-permissions
+43      for more information.
+44    -->
+45    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+45-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:120:5-76
+45-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:120:22-73
+46    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+46-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:121:5-75
+46-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:121:22-72
+47    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" /> <!-- Permissions options for the `camera` group -->
+47-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:122:5-75
+47-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:122:22-72
+48    <uses-permission android:name="android.permission.CAMERA" /> <!-- Permissions options for the `sms` group -->
+48-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:125:5-64
+48-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:125:22-62
+49    <uses-permission android:name="android.permission.SEND_SMS" />
+49-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:128:5-66
+49-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:128:22-64
+50    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+50-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:129:5-69
+50-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:129:22-67
+51    <uses-permission android:name="android.permission.READ_SMS" />
+51-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:130:5-66
+51-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:130:22-64
+52    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+52-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:131:5-74
+52-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:131:22-72
+53    <uses-permission android:name="android.permission.RECEIVE_MMS" /> <!-- Permissions options for the `phone` group -->
+53-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:132:5-69
+53-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:132:22-67
+54    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+54-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:135:5-74
+54-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:135:22-72
+55    <uses-permission android:name="android.permission.CALL_PHONE" />
+55-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:136:5-68
+55-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:136:22-66
+56    <uses-permission android:name="android.permission.ADD_VOICEMAIL" />
+56-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:137:5-71
+56-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:137:22-69
+57    <uses-permission android:name="android.permission.USE_SIP" />
+57-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:138:5-65
+57-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:138:22-63
+58    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+58-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:139:5-71
+58-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:139:22-69
+59    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+59-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:140:5-72
+59-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:140:22-70
+60    <uses-permission android:name="android.permission.BIND_CALL_REDIRECTION_SERVICE" /> <!-- Permissions options for the `calendar` group -->
+60-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:141:5-87
+60-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:141:22-85
+61    <uses-permission android:name="android.permission.READ_CALENDAR" />
+61-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:144:5-72
+61-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:144:22-69
+62    <uses-permission android:name="android.permission.WRITE_CALENDAR" /> <!-- Permissions options for the `location` group -->
+62-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:145:5-73
+62-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:145:22-70
+63    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+63-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:148:5-79
+63-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:148:22-76
+64    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+64-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:149:5-81
+64-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:149:22-78
+65    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- Permissions options for the `microphone` or `speech` group -->
+65-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:150:5-85
+65-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:150:22-82
+66    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- Permissions options for the `sensors` group -->
+66-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:153:5-71
+66-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:153:22-68
+67    <uses-permission android:name="android.permission.BODY_SENSORS" />
+67-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:156:5-71
+67-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:156:22-68
+68    <uses-permission android:name="android.permission.BODY_SENSORS_BACKGROUND" /> <!-- Permissions options for the `accessMediaLocation` group -->
+68-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:157:5-82
+68-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:157:22-79
+69    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" /> <!-- Permissions options for the `activityRecognition` group -->
+69-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:160:5-80
+69-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:160:22-77
+70    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" /> <!-- Permissions options for the `ignoreBatteryOptimizations` group -->
+70-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:163:5-79
+70-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:163:22-76
+71    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" /> <!-- Permissions options for the `nearby devices` group -->
+71-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:166:5-95
+71-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:166:22-92
+72    <uses-permission android:name="android.permission.BLUETOOTH" />
+72-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:169:5-68
+72-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:169:22-65
+73    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+73-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:170:5-73
+73-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:170:22-70
+74    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+74-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:171:5-78
+74-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:171:22-75
+75    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+75-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:172:5-76
+75-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:172:22-73
+76    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" /> <!-- Permissions options for the `manage external storage` group -->
+76-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:173:5-78
+76-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:173:22-75
+77    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" /> <!-- Permissions options for the `system alert windows` group -->
+77-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:176:5-82
+77-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:176:22-79
+78    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- Permissions options for the `request install packages` group -->
+78-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:179:5-78
+78-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:179:22-75
+79    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- Permissions options for the `access notification policy` group -->
+79-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:182:5-83
+79-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:182:22-80
+80    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" /> <!-- Permissions options for the `notification` group -->
+80-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:185:5-84
+80-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:185:22-82
+81    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Permissions options for the `alarm` group -->
+81-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:188:5-76
+81-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:188:22-74
+82    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+82-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:191:5-79
+82-->/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/android/app/src/main/AndroidManifest.xml:191:22-76
+83    <uses-permission android:name="android.permission.WAKE_LOCK" />
+83-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:5-68
+83-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:22-65
+84    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+84-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:26:5-79
+84-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:26:22-76
+85    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+85-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
+85-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
+86    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+86-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
+86-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:22-74
+87
+88    <permission
+88-->[androidx.core:core:1.10.1] /Users/it_dev/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+89        android:name="com.example.flutter_webviewpro_01.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+89-->[androidx.core:core:1.10.1] /Users/it_dev/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+90        android:protectionLevel="signature" />
+90-->[androidx.core:core:1.10.1] /Users/it_dev/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
 91
-92        <uses-library
-92-->[androidx.window:window:1.0.0-beta04] /Users/it_dev/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-93            android:name="androidx.window.extensions"
-93-->[androidx.window:window:1.0.0-beta04] /Users/it_dev/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-94            android:required="false" />
-94-->[androidx.window:window:1.0.0-beta04] /Users/it_dev/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-95        <uses-library
-95-->[androidx.window:window:1.0.0-beta04] /Users/it_dev/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-96            android:name="androidx.window.sidecar"
-96-->[androidx.window:window:1.0.0-beta04] /Users/it_dev/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-97            android:required="false" />
-97-->[androidx.window:window:1.0.0-beta04] /Users/it_dev/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-98
-99        <provider
-99-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
-100            android:name="androidx.startup.InitializationProvider"
-100-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
-101            android:authorities="com.example.flutter_webviewpro_01.androidx-startup"
-101-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
-102            android:exported="false" >
-102-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
-103            <meta-data
-103-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
-104                android:name="androidx.work.WorkManagerInitializer"
-104-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
-105                android:value="androidx.startup" />
-105-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
-106        </provider>
-107
-108        <service
-108-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
-109            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
-109-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
-110            android:directBootAware="false"
-110-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
-111            android:enabled="@bool/enable_system_alarm_service_default"
-111-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
-112            android:exported="false" />
-112-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
-113        <service
-113-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
-114            android:name="androidx.work.impl.background.systemjob.SystemJobService"
-114-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
-115            android:directBootAware="false"
-115-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
-116            android:enabled="@bool/enable_system_job_service_default"
-116-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
-117            android:exported="true"
-117-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
-118            android:permission="android.permission.BIND_JOB_SERVICE" />
-118-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
-119        <service
-119-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
-120            android:name="androidx.work.impl.foreground.SystemForegroundService"
-120-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
-121            android:directBootAware="false"
-121-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
-122            android:enabled="@bool/enable_system_foreground_service_default"
-122-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
-123            android:exported="false" />
-123-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
-124
-125        <receiver
-125-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
-126            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
-126-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
-127            android:directBootAware="false"
-127-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
-128            android:enabled="true"
-128-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
-129            android:exported="false" />
-129-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
-130        <receiver
-130-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
-131            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
-131-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
-132            android:directBootAware="false"
-132-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
-133            android:enabled="false"
-133-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
-134            android:exported="false" >
-134-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
-135            <intent-filter>
-135-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
-136                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-136-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
-136-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
-137                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-137-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
-137-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
-138            </intent-filter>
-139        </receiver>
-140        <receiver
-140-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
-141            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
-141-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
-142            android:directBootAware="false"
-142-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
-143            android:enabled="false"
-143-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
-144            android:exported="false" >
-144-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
-145            <intent-filter>
-145-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
-146                <action android:name="android.intent.action.BATTERY_OKAY" />
-146-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
-146-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
-147                <action android:name="android.intent.action.BATTERY_LOW" />
-147-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
-147-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
-148            </intent-filter>
-149        </receiver>
-150        <receiver
-150-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
-151            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
-151-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
-152            android:directBootAware="false"
-152-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
-153            android:enabled="false"
-153-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
-154            android:exported="false" >
-154-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
-155            <intent-filter>
-155-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
-156                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
-156-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
-156-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
-157                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
-157-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
-157-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
-158            </intent-filter>
-159        </receiver>
-160        <receiver
-160-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
-161            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
-161-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
-162            android:directBootAware="false"
-162-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
-163            android:enabled="false"
-163-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
-164            android:exported="false" >
-164-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
-165            <intent-filter>
-165-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
-166                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-166-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
-166-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
-167            </intent-filter>
-168        </receiver>
-169        <receiver
-169-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
-170            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
-170-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
-171            android:directBootAware="false"
-171-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
-172            android:enabled="false"
-172-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
-173            android:exported="false" >
-173-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
-174            <intent-filter>
-174-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
-175                <action android:name="android.intent.action.BOOT_COMPLETED" />
-175-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
-175-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
-176                <action android:name="android.intent.action.TIME_SET" />
-176-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
-176-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
-177                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-177-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
-177-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
-178            </intent-filter>
-179        </receiver>
-180        <receiver
-180-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
-181            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
-181-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
-182            android:directBootAware="false"
-182-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
-183            android:enabled="@bool/enable_system_alarm_service_default"
-183-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
-184            android:exported="false" >
-184-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
-185            <intent-filter>
-185-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
-186                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
-186-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
-186-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
-187            </intent-filter>
-188        </receiver>
-189        <receiver
-189-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
-190            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
-190-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
-191            android:directBootAware="false"
-191-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
-192            android:enabled="true"
-192-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
-193            android:exported="true"
-193-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
-194            android:permission="android.permission.DUMP" >
-194-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
-195            <intent-filter>
-195-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
-196                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
-196-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
-196-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
-197            </intent-filter>
-198        </receiver>
-199
-200        <service
-200-->[androidx.room:room-runtime:2.2.5] /Users/it_dev/.gradle/caches/transforms-3/b4be91b71dbb8833b028ca23c612f59e/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
-201            android:name="androidx.room.MultiInstanceInvalidationService"
-201-->[androidx.room:room-runtime:2.2.5] /Users/it_dev/.gradle/caches/transforms-3/b4be91b71dbb8833b028ca23c612f59e/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
-202            android:directBootAware="true"
-202-->[androidx.room:room-runtime:2.2.5] /Users/it_dev/.gradle/caches/transforms-3/b4be91b71dbb8833b028ca23c612f59e/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
-203            android:exported="false" />
-203-->[androidx.room:room-runtime:2.2.5] /Users/it_dev/.gradle/caches/transforms-3/b4be91b71dbb8833b028ca23c612f59e/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
-204    </application>
-205
-206</manifest>
+92    <uses-permission android:name="com.example.flutter_webviewpro_01.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+92-->[androidx.core:core:1.10.1] /Users/it_dev/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+92-->[androidx.core:core:1.10.1] /Users/it_dev/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+93
+94    <application
+95        android:name="android.app.Application"
+96        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+96-->[androidx.core:core:1.10.1] /Users/it_dev/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+97        android:debuggable="true"
+98        android:icon="@mipmap/ic_launcher"
+99        android:label="flutter_webviewpro_01"
+100        android:usesCleartextTraffic="true" >
+101        <provider
+102            android:name="vn.hunghd.flutterdownloader.DownloadedFileProvider"
+103            android:authorities="com.example.flutter_webviewpro_01.flutter_downloader.provider"
+104            android:exported="false"
+105            android:grantUriPermissions="true" >
+106            <meta-data
+106-->[:open_file] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-19:53
+107                android:name="android.support.FILE_PROVIDER_PATHS"
+107-->[:open_file] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:18:17-67
+108                android:resource="@xml/provider_paths" />
+108-->[:open_file] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:19:17-50
+109        </provider>
+110        <!-- Begin FlutterDownloader customization -->
+111        <!-- disable default Initializer -->
+112        <provider
+113            android:name="androidx.startup.InitializationProvider"
+114            android:authorities="com.example.flutter_webviewpro_01.androidx-startup"
+115            android:exported="false" >
+116            <meta-data
+116-->[androidx.emoji2:emoji2:1.2.0] /Users/it_dev/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+117                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+117-->[androidx.emoji2:emoji2:1.2.0] /Users/it_dev/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+118                android:value="androidx.startup" />
+118-->[androidx.emoji2:emoji2:1.2.0] /Users/it_dev/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+119            <meta-data
+119-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/it_dev/.gradle/caches/transforms-3/8c1e738388b632b23acecc5b0cf3e292/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+120                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+120-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/it_dev/.gradle/caches/transforms-3/8c1e738388b632b23acecc5b0cf3e292/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+121                android:value="androidx.startup" />
+121-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/it_dev/.gradle/caches/transforms-3/8c1e738388b632b23acecc5b0cf3e292/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+122        </provider>
+123
+124        <!-- declare customized Initializer -->
+125        <provider
+126            android:name="vn.hunghd.flutterdownloader.FlutterDownloaderInitializer"
+127            android:authorities="com.example.flutter_webviewpro_01.flutter-downloader-init"
+128            android:exported="false" >
+129
+130            <!-- changes this number to configure the maximum number of concurrent tasks -->
+131            <meta-data
+132                android:name="vn.hunghd.flutterdownloader.MAX_CONCURRENT_TASKS"
+133                android:value="5" />
+134        </provider>
+135        <!-- End FlutterDownloader customization -->
+136
+137        <provider
+138            android:name="androidx.core.content.FileProvider"
+139            android:authorities="com.example.flutter_webviewpro_01.fileprovider"
+140            android:exported="false"
+141            android:grantUriPermissions="true" >
+142            <meta-data
+142-->[:open_file] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-19:53
+143                android:name="android.support.FILE_PROVIDER_PATHS"
+143-->[:open_file] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:18:17-67
+144                android:resource="@xml/provider_paths" />
+144-->[:open_file] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:19:17-50
+145        </provider>
+146
+147        <activity
+148            android:name="com.example.flutter_webviewpro_01.MainActivity"
+149            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+150            android:exported="true"
+151            android:hardwareAccelerated="true"
+152            android:launchMode="singleTop"
+153            android:theme="@style/LaunchTheme"
+154            android:windowSoftInputMode="adjustResize" >
+155
+156            <!--
+157                 Specifies an Android theme to apply to this Activity as soon as
+158                 the Android process has started. This theme is visible to the user
+159                 while the Flutter UI initializes. After that, this theme continues
+160                 to determine the Window background behind the Flutter UI.
+161            -->
+162            <meta-data
+163                android:name="io.flutter.embedding.android.NormalTheme"
+164                android:resource="@style/NormalTheme" />
+165
+166            <intent-filter>
+167                <action android:name="android.intent.action.MAIN" />
+168
+169                <category android:name="android.intent.category.LAUNCHER" />
+170            </intent-filter>
+171        </activity>
+172        <!--
+173             Don't delete the meta-data below.
+174             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+175        -->
+176        <meta-data
+177            android:name="flutterEmbedding"
+178            android:value="2" />
+179
+180        <provider
+180-->[:open_file] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-20:20
+181            android:name="com.crazecoder.openfile.FileProvider"
+181-->[:open_file] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-64
+182            android:authorities="com.example.flutter_webviewpro_01.fileProvider.com.crazecoder.openfile"
+182-->[:open_file] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-88
+183            android:exported="false"
+183-->[:open_file] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-37
+184            android:grantUriPermissions="true" >
+184-->[:open_file] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-47
+185            <meta-data
+185-->[:open_file] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-19:53
+186                android:name="android.support.FILE_PROVIDER_PATHS"
+186-->[:open_file] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:18:17-67
+187                android:resource="@xml/filepaths" />
+187-->[:open_file] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:19:17-50
+188        </provider>
+189
+190        <activity
+190-->[:url_launcher_android] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
+191            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+191-->[:url_launcher_android] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+192            android:exported="false"
+192-->[:url_launcher_android] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+193            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+193-->[:url_launcher_android] /Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+194
+195        <uses-library
+195-->[androidx.window:window:1.0.0-beta04] /Users/it_dev/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+196            android:name="androidx.window.extensions"
+196-->[androidx.window:window:1.0.0-beta04] /Users/it_dev/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+197            android:required="false" />
+197-->[androidx.window:window:1.0.0-beta04] /Users/it_dev/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+198        <uses-library
+198-->[androidx.window:window:1.0.0-beta04] /Users/it_dev/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+199            android:name="androidx.window.sidecar"
+199-->[androidx.window:window:1.0.0-beta04] /Users/it_dev/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+200            android:required="false" />
+200-->[androidx.window:window:1.0.0-beta04] /Users/it_dev/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+201
+202        <service
+202-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+203            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+203-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+204            android:directBootAware="false"
+204-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+205            android:enabled="@bool/enable_system_alarm_service_default"
+205-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+206            android:exported="false" />
+206-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+207        <service
+207-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+208            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+208-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+209            android:directBootAware="false"
+209-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+210            android:enabled="@bool/enable_system_job_service_default"
+210-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+211            android:exported="true"
+211-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+212            android:permission="android.permission.BIND_JOB_SERVICE" />
+212-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+213        <service
+213-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+214            android:name="androidx.work.impl.foreground.SystemForegroundService"
+214-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+215            android:directBootAware="false"
+215-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+216            android:enabled="@bool/enable_system_foreground_service_default"
+216-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+217            android:exported="false" />
+217-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+218
+219        <receiver
+219-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+220            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+220-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+221            android:directBootAware="false"
+221-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+222            android:enabled="true"
+222-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+223            android:exported="false" />
+223-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+224        <receiver
+224-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+225            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+225-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+226            android:directBootAware="false"
+226-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+227            android:enabled="false"
+227-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+228            android:exported="false" >
+228-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+229            <intent-filter>
+229-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+230                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+230-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+230-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+231                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+231-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+231-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+232            </intent-filter>
+233        </receiver>
+234        <receiver
+234-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+235            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+235-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+236            android:directBootAware="false"
+236-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+237            android:enabled="false"
+237-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+238            android:exported="false" >
+238-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+239            <intent-filter>
+239-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+240                <action android:name="android.intent.action.BATTERY_OKAY" />
+240-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+240-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+241                <action android:name="android.intent.action.BATTERY_LOW" />
+241-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+241-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+242            </intent-filter>
+243        </receiver>
+244        <receiver
+244-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+245            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+245-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+246            android:directBootAware="false"
+246-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+247            android:enabled="false"
+247-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+248            android:exported="false" >
+248-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+249            <intent-filter>
+249-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+250                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+250-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+250-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+251                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+251-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+251-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+252            </intent-filter>
+253        </receiver>
+254        <receiver
+254-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+255            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+255-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+256            android:directBootAware="false"
+256-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+257            android:enabled="false"
+257-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+258            android:exported="false" >
+258-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+259            <intent-filter>
+259-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+260                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+260-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+260-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+261            </intent-filter>
+262        </receiver>
+263        <receiver
+263-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+264            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+264-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+265            android:directBootAware="false"
+265-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+266            android:enabled="false"
+266-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+267            android:exported="false" >
+267-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+268            <intent-filter>
+268-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+269                <action android:name="android.intent.action.BOOT_COMPLETED" />
+269-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
+269-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
+270                <action android:name="android.intent.action.TIME_SET" />
+270-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+270-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+271                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+271-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+271-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+272            </intent-filter>
+273        </receiver>
+274        <receiver
+274-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+275            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+275-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+276            android:directBootAware="false"
+276-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+277            android:enabled="@bool/enable_system_alarm_service_default"
+277-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+278            android:exported="false" >
+278-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+279            <intent-filter>
+279-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+280                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+280-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+280-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+281            </intent-filter>
+282        </receiver>
+283        <receiver
+283-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+284            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+284-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+285            android:directBootAware="false"
+285-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+286            android:enabled="true"
+286-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+287            android:exported="true"
+287-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+288            android:permission="android.permission.DUMP" >
+288-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+289            <intent-filter>
+289-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+290                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+290-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+290-->[androidx.work:work-runtime:2.7.1] /Users/it_dev/.gradle/caches/transforms-3/c8e25f60706e198163525ec7d2d7c16e/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+291            </intent-filter>
+292        </receiver>
+293
+294        <service
+294-->[androidx.room:room-runtime:2.2.5] /Users/it_dev/.gradle/caches/transforms-3/b4be91b71dbb8833b028ca23c612f59e/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+295            android:name="androidx.room.MultiInstanceInvalidationService"
+295-->[androidx.room:room-runtime:2.2.5] /Users/it_dev/.gradle/caches/transforms-3/b4be91b71dbb8833b028ca23c612f59e/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+296            android:directBootAware="true"
+296-->[androidx.room:room-runtime:2.2.5] /Users/it_dev/.gradle/caches/transforms-3/b4be91b71dbb8833b028ca23c612f59e/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+297            android:exported="false" />
+297-->[androidx.room:room-runtime:2.2.5] /Users/it_dev/.gradle/caches/transforms-3/b4be91b71dbb8833b028ca23c612f59e/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+298    </application>
+299
+300</manifest>

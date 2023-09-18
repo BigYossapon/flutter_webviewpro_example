@@ -7,14 +7,53 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
+import 'dart:isolate';
 import 'dart:typed_data';
+import 'dart:ui';
 
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:flutter_webview_pro/webview_flutter.dart';
+import 'package:open_file/open_file.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-void main() => runApp(MaterialApp(home: WebViewExample()));
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Plugin must be initialized before using
+  await FlutterDownloader.initialize(
+      debug:
+          true, // optional: set to false to disable printing logs to console (default: true)
+      ignoreSsl:
+          true // option: set to false to disable working with http links (default: false)
+      );
+  runApp(MaterialApp(home: WebViewExample()));
+}
+
+String taskid = '';
+
+@pragma('vm:entry-point')
+void callback(String id, int status, int progress) async {
+  print('task : $id = download: $progress = status : $status');
+
+  IsolateNameServer.lookupPortByName('downloader_send_port')
+      ?.send([id, status, progress]);
+}
+
+Future<void> openfile() async {
+  //final file = await downloadfile(url: url);
+  String file = filepath + filename;
+  print('filepath full :' + file);
+  if (filename == null) {
+    print('something wrong');
+    return;
+  }
+  print('path : ${file}');
+  OpenFile.open(file);
+}
 
 const String kNavigationExamplePage = '''
 <!DOCTYPE html><html>
@@ -81,6 +120,9 @@ const String kTransparentBackgroundPage = '''
   </html>
 ''';
 
+String filename = '';
+String filepath = '';
+
 class WebViewExample extends StatefulWidget {
   @override
   _WebViewExampleState createState() => _WebViewExampleState();
@@ -89,6 +131,7 @@ class WebViewExample extends StatefulWidget {
 class _WebViewExampleState extends State<WebViewExample> {
   final Completer<WebViewController> _controller =
       Completer<WebViewController>();
+  ReceivePort _port = ReceivePort();
 
   @override
   void initState() {
@@ -96,6 +139,23 @@ class _WebViewExampleState extends State<WebViewExample> {
     if (Platform.isAndroid) {
       WebView.platform = SurfaceAndroidWebView();
     }
+
+    // IsolateNameServer.registerPortWithName(
+    //     _port.sendPort, 'downloader_send_port');
+    // _port.listen((dynamic data) {
+    //   final taskId = (data as List<dynamic>)[0] as String;
+    //   final status = DownloadTaskStatus.fromInt(data[1] as int);
+    //   final progress = data[2] as int;
+    //   if (status == 3 && progress == 100) {
+    //     FlutterDownloader.open(taskId: taskId);
+    //   }
+    //   print(
+    //     'Callback on UI isolate: '
+    //     'task ($taskId) is in status ($status) and process ($progress)',
+    //   );
+    // });
+    _bindBackgroundIsolate();
+    FlutterDownloader.registerCallback(callback);
   }
 
   @override
@@ -163,11 +223,142 @@ class _WebViewExampleState extends State<WebViewExample> {
   JavascriptChannel _toasterJavascriptChannel(BuildContext context) {
     return JavascriptChannel(
         name: 'JavascriptChannel',
-        onMessageReceived: (JavascriptMessage message) {
+        onMessageReceived: (JavascriptMessage message) async {
           // ignore: deprecated_member_use
-          urllauncher(message.message, context);
+
+          // storageRequestPermission();
+          downloader(message.message);
+          //urllauncher(message.message, context);
+          //openfile(url: message.message);
         });
   }
+
+  void _bindBackgroundIsolate() {
+    final isSuccess = IsolateNameServer.registerPortWithName(
+      _port.sendPort,
+      'downloader_send_port',
+    );
+    if (!isSuccess) {
+      _unbindBackgroundIsolate();
+      _bindBackgroundIsolate();
+      return;
+    }
+    _port.listen((dynamic data) {
+      final taskId = (data as List<dynamic>)[0] as String;
+      final status = DownloadTaskStatus.fromInt(data[1] as int);
+      final progress = data[2] as int;
+
+      print(
+        'Callback on UI isolate: '
+        'task ($taskId) is in status ($status) and process ($progress)',
+      );
+
+      // if (_tasks != null && _tasks!.isNotEmpty) {
+      //   final task = _tasks!.firstWhere((task) => task.taskId == taskId);
+      //   setState(() {
+      //     task
+      //       ..status = status
+      //       ..progress = progress;
+      //   });
+      // }
+    });
+  }
+
+  void _unbindBackgroundIsolate() {
+    IsolateNameServer.removePortNameMapping('downloader_send_port');
+  }
+
+  Future<void> storageRequestPermission() async {
+    print('fff');
+    Map<Permission, PermissionStatus> statuses = await [
+      Permission.location,
+      Permission.notification,
+      Permission.mediaLibrary,
+      Permission.accessNotificationPolicy,
+      Permission.accessMediaLocation,
+      Permission.manageExternalStorage,
+      Permission.requestInstallPackages,
+      Permission.photos,
+      Permission.photosAddOnly,
+      Permission.storage,
+    ].request();
+
+    print('location' + statuses[Permission.location].toString());
+    print('noti' + statuses[Permission.notification].toString());
+    print('media' + statuses[Permission.mediaLibrary].toString());
+    print('storage' + statuses[Permission.storage].toString());
+    print(
+        'medialocation' + statuses[Permission.accessMediaLocation].toString());
+    print(statuses[Permission.location]);
+    print(statuses[Permission.location]);
+    print(statuses[Permission.location]);
+    print(statuses[Permission.location]);
+    print(statuses[Permission.location]);
+  }
+
+  void downloader(String url) async {
+    final Directory tempDir = await getTemporaryDirectory();
+    final Directory appDocumentsDir = await getApplicationDocumentsDirectory();
+    final Directory? downloadsDir = await getDownloadsDirectory();
+    final Directory appSupportDir = await getApplicationSupportDirectory();
+    final Directory? appCacheDir = await getApplicationCacheDirectory();
+    filename = await getfilename(url);
+    filepath = await appDocumentsDir.path;
+    final taskId = await FlutterDownloader.enqueue(
+        url: url,
+        headers: {}, // optional: header send with url (auth token etc)
+        savedDir: appDocumentsDir.path,
+        showNotification:
+            true, // show download progress in status bar (for Android)
+        openFileFromNotification:
+            true, // click on notification to open downloaded file (for Android)
+        saveInPublicStorage: true);
+
+    await FlutterDownloader.registerCallback(
+        callback); // callback is a top-level or static function
+  }
+
+  Future<String> getfilename(String url) async {
+    // Parse the URL
+    Uri uri = Uri.parse(url);
+
+    // Get the last segment of the path
+    String lastPathSegment = uri.pathSegments.last;
+    print('full:' + lastPathSegment);
+    return lastPathSegment;
+  }
+
+  // Future<void> openfile({required String url}) async {
+  //   final file = await downloadfile(url: url);
+
+  //   if (file == null) {
+  //     print('something wrong');
+  //     return;
+  //   }
+  //   print('path : ${file.path}');
+  //   OpenFile.open(file.path);
+  // }
+
+  // Future<File?> downloadfile({required String url}) async {
+  //   try {
+  //     final appstorage = await getApplicationDocumentsDirectory();
+  //     final filename = await getfilename(url);
+  //     final file = File('${appstorage.path}/$filename');
+  //     final response = await Dio().get(url,
+  //         options: Options(
+  //           responseType: ResponseType.bytes,
+  //           followRedirects: false,
+  //           receiveTimeout: Duration(seconds: 30),
+  //         ));
+  //     final raf = file.openSync(mode: FileMode.write);
+  //     raf.writeFromSync(response.data);
+  //     await raf.close();
+
+  //     return file;
+  //   } catch (e) {
+  //     return null;
+  //   }
+  // }
 
   void urllauncher(String url, BuildContext? context) async {
     print(url);
@@ -184,7 +375,7 @@ class _WebViewExampleState extends State<WebViewExample> {
         throw 'Could not launch $url';
       }
     } else {
-      await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+      await launchUrl(Uri.parse(url), mode: LaunchMode.platformDefault);
     }
   }
 

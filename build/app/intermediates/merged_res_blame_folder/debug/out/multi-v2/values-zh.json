@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.flutter_webviewpro_01.app-mergeDebugResources-14:/values-zh/values-zh.xml",
+            "outputFile": "com.example.flutter_webviewpro_01.app-mergeDebugResources-25:/values-zh/values-zh.xml",
             "map": [
                 {
-                    "source": "/Users/it_dev/Documents/flutter_webviewpro_01/build/webview_pro_android/intermediates/packaged_res/debug/values-zh/values-zh.xml",
+                    "source": "/Users/it_dev/Documents/GitHub/flutter_webviewpro_example/build/webview_pro_android/intermediates/packaged_res/debug/values-zh/values-zh.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
