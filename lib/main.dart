@@ -11,7 +11,10 @@ import 'dart:isolate';
 import 'dart:typed_data';
 import 'dart:ui';
 
+import 'package:android_path_provider/android_path_provider.dart';
+import 'package:device_info_plus/device_info_plus.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:flutter_webview_pro/webview_flutter.dart';
@@ -37,22 +40,10 @@ String taskid = '';
 
 @pragma('vm:entry-point')
 void callback(String id, int status, int progress) async {
-  print('task : $id = download: $progress = status : $status');
+  //print('task : $id = download: $progress = status : $status');
 
   IsolateNameServer.lookupPortByName('downloader_send_port')
       ?.send([id, status, progress]);
-}
-
-Future<void> openfile() async {
-  //final file = await downloadfile(url: url);
-  String file = filepath + filename;
-  print('filepath full :' + file);
-  if (filename == null) {
-    print('something wrong');
-    return;
-  }
-  print('path : ${file}');
-  OpenFile.open(file);
 }
 
 const String kNavigationExamplePage = '''
@@ -122,6 +113,8 @@ const String kTransparentBackgroundPage = '''
 
 String filename = '';
 String filepath = '';
+String _localPath = '';
+double progressvalue = 0.0;
 
 class WebViewExample extends StatefulWidget {
   @override
@@ -156,6 +149,42 @@ class _WebViewExampleState extends State<WebViewExample> {
     // });
     _bindBackgroundIsolate();
     FlutterDownloader.registerCallback(callback, step: 1);
+    _prepare();
+  }
+
+  Future<void> openfile() async {
+    //final file = await downloadfile(url: url);
+    String file = filepath + filename;
+    print('filepath full :' + file);
+    if (filename == null) {
+      print('something wrong');
+      return;
+    }
+    print('path : ${file}');
+    OpenFile.open(file);
+  }
+
+  Future<bool> _checkPermission() async {
+    if (Platform.isIOS) {
+      return true;
+    }
+
+    if (Platform.isAndroid) {
+      final info = await DeviceInfoPlugin().androidInfo;
+      if (info.version.sdkInt > 28) {
+        return true;
+      }
+
+      final status = await Permission.storage.status;
+      if (status == PermissionStatus.granted) {
+        return true;
+      }
+
+      final result = await Permission.storage.request();
+      return result == PermissionStatus.granted;
+    }
+
+    throw StateError('unknown platform');
   }
 
   @override
@@ -216,7 +245,10 @@ class _WebViewExampleState extends State<WebViewExample> {
           geolocationEnabled: true, // set geolocationEnable true or not
         );
       }),
-      floatingActionButton: favoriteButton(),
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [loadButton(), favoriteButton()],
+      ),
     );
   }
 
@@ -244,14 +276,27 @@ class _WebViewExampleState extends State<WebViewExample> {
       return;
     }
     _port.listen((dynamic data) {
+      String id = data[0];
       final taskId = (data as List<dynamic>)[0] as String;
       final status = DownloadTaskStatus.fromInt(data[1] as int);
       final progress = data[2] as int;
       print(
           'status: ' + status.toString() + 'progress :' + progress.toString());
-      if (status == 3 && progress == 100) {
+      setState(() {
+        progressvalue = progress / 100;
+      });
+      if (status == DownloadTaskStatus.complete) {
         print('get');
-        FlutterDownloader.open(taskId: taskId);
+        print('id: ' + id);
+        print('taskId: ' + taskId);
+        // setState(() {
+        //   progressvalue = 0.0;
+        // });
+        Future.delayed(const Duration(seconds: 1), () {
+          FlutterDownloader.open(taskId: id);
+        });
+
+        //openfile();
       }
       print(
         'Callback on UI isolate: '
@@ -301,22 +346,92 @@ class _WebViewExampleState extends State<WebViewExample> {
     print(statuses[Permission.location]);
   }
 
+  Future<String?> _getSavedDir() async {
+    String? externalStorageDirPath;
+
+    if (Platform.isAndroid) {
+      try {
+        externalStorageDirPath = await AndroidPathProvider.downloadsPath;
+      } catch (err, st) {
+        print('failed to get downloads path: $err, $st');
+
+        final directory = await getExternalStorageDirectory();
+        externalStorageDirPath = directory?.path;
+      }
+    } else if (Platform.isIOS) {
+      // var dir = (await _dirsOnIOS)[0]; // temporary
+      // var dir = (await _dirsOnIOS)[1]; // applicationSupport
+      // var dir = (await _dirsOnIOS)[2]; // library
+      var dir = (await _dirsOnIOS)[3]; // applicationDocuments
+      // var dir = (await _dirsOnIOS)[4]; // downloads
+
+      dir ??= await getApplicationDocumentsDirectory();
+      externalStorageDirPath = dir.absolute.path;
+    }
+
+    return externalStorageDirPath;
+  }
+
+  Future<void> _prepare() async {
+    bool permissionReady = await _checkPermission();
+    print('permission : $permissionReady');
+    if (permissionReady) {
+      await _prepareSaveDir();
+    }
+  }
+
+  Future<void> _prepareSaveDir() async {
+    _localPath = (await _getSavedDir())!;
+    final savedDir = Directory(_localPath);
+    if (!savedDir.existsSync()) {
+      await savedDir.create();
+    }
+  }
+
+  Future<List<Directory?>> get _dirsOnIOS async {
+    final temporary = await getTemporaryDirectory();
+    final applicationSupport = await getApplicationSupportDirectory();
+    final library = await getLibraryDirectory();
+    final applicationDocuments = await getApplicationDocumentsDirectory();
+    final downloads = await getDownloadsDirectory();
+
+    final dirs = [
+      temporary,
+      applicationSupport,
+      library,
+      applicationDocuments,
+      downloads
+    ];
+
+    return dirs;
+  }
+
   void downloader(String url) async {
-    final Directory tempDir = await getTemporaryDirectory();
-    final Directory appDocumentsDir = await getApplicationDocumentsDirectory();
-    final Directory? downloadsDir = await getDownloadsDirectory();
-    final Directory appSupportDir = await getApplicationSupportDirectory();
-    final Directory? appCacheDir = await getApplicationCacheDirectory();
-    filename = await getfilename(url);
-    filepath = await appDocumentsDir.path;
+    // final Directory tempDir = await getTemporaryDirectory();
+    // //ios
+    // final Directory appDocumentsDir = await getApplicationDocumentsDirectory();
+    // final Directory? downloadsDir = await getDownloadsDirectory();
+    // final Directory appSupportDir = await getApplicationSupportDirectory();
+    // final Directory? appCacheDir = await getApplicationCacheDirectory();
+    // String path = '';
+    // //android
+    // if (Platform.isAndroid) {
+    //   final Directory? externalStorageDir = await getExternalStorageDirectory();
+    //   path = externalStorageDir!.path;
+    // } else {
+    //   path = appDocumentsDir.path;
+    // }
+
+    // filename = await getfilename(url);
+    // filepath = await appDocumentsDir.path;
     final taskId = await FlutterDownloader.enqueue(
         url: url,
         headers: {}, // optional: header send with url (auth token etc)
-        savedDir: appDocumentsDir.path,
+        savedDir: _localPath,
         showNotification:
-            true, // show download progress in status bar (for Android)
+            false, // show download progress in status bar (for Android)
         openFileFromNotification:
-            true, // click on notification to open downloaded file (for Android)
+            false, // click on notification to open downloaded file (for Android)
         saveInPublicStorage: true);
   }
 
@@ -411,6 +526,22 @@ class _WebViewExampleState extends State<WebViewExample> {
           }
           return Container();
         });
+  }
+
+  Widget loadButton() {
+    return Container(
+        alignment: Alignment.bottomCenter,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle, // This makes the container circular
+          color: Colors.white, // You can change the background color
+        ),
+        width: 50,
+        height: 50,
+        //color: Colors.blue,
+        child: CircularProgressIndicator(
+          color: Colors.blue,
+          value: progressvalue,
+        ));
   }
 }
 

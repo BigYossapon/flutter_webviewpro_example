@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "android_path_provider",
+      "rootUri": "file:///Users/it_dev/.pub-cache/hosted/pub.dev/android_path_provider-0.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "async",
       "rootUri": "file:///Users/it_dev/.pub-cache/hosted/pub.dev/async-2.11.0",
       "packageUri": "lib/",
@@ -38,6 +44,18 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "device_info_plus",
+      "rootUri": "file:///Users/it_dev/.pub-cache/hosted/pub.dev/device_info_plus-9.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "device_info_plus_platform_interface",
+      "rootUri": "file:///Users/it_dev/.pub-cache/hosted/pub.dev/device_info_plus_platform_interface-7.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "dio",
       "rootUri": "file:///Users/it_dev/.pub-cache/hosted/pub.dev/dio-5.3.2",
       "packageUri": "lib/",
@@ -54,6 +72,12 @@
       "rootUri": "file:///Users/it_dev/.pub-cache/hosted/pub.dev/ffi-2.1.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "file",
+      "rootUri": "file:///Users/it_dev/.pub-cache/hosted/pub.dev/file-6.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "flutter",
@@ -339,9 +363,15 @@
     },
     {
       "name": "win32",
-      "rootUri": "file:///Users/it_dev/.pub-cache/hosted/pub.dev/win32-5.0.7",
+      "rootUri": "file:///Users/it_dev/.pub-cache/hosted/pub.dev/win32-4.1.4",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "win32_registry",
+      "rootUri": "file:///Users/it_dev/.pub-cache/hosted/pub.dev/win32_registry-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "xdg_directories",
@@ -356,7 +386,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-09-18T10:34:18.881687Z",
+  "generated": "2023-09-19T03:47:41.421127Z",
   "generator": "pub",
   "generatorVersion": "3.0.3"
 }
